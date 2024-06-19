@@ -16,6 +16,7 @@ function CustomEls({ URL }) {
 
         // This imports all components
         import("@shoelace-style/shoelace/dist/react/index.js")
+
         customEls.current = true;
       },
     );
