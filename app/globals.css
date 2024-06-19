@@ -1,3 +1,4 @@
+@import "@shoelace-style/shoelace/dist/themes/light.css";
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

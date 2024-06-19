@@ -1,7 +1,9 @@
+'use client';
 import React from "react";
 import dynamic from "next/dynamic";
+
 const SlButton = dynamic(
-  () => import("@shoelace-style/shoelace/dist/react/button/index.js").default,
+  () => import("@shoelace-style/shoelace/dist/react/button/index.js"),
   {
     loading: () => <p>Loading...</p>,
     ssr: false,
