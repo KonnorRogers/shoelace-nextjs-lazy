@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import type { AppProps } from "next/app";
+import "@shoelace-style/shoelace/dist/themes/light.css";
 
 function CustomEls({ URL }) {
   // useRef to avoid re-renders
@@ -13,9 +14,6 @@ function CustomEls({ URL }) {
     import("@shoelace-style/shoelace/dist/utilities/base-path.js").then(
       ({ setBasePath }) => {
         setBasePath(`${URL}/static/static`);
-
-        // This imports all components
-        import("@shoelace-style/shoelace/dist/react/index.js")
         customEls.current = true;
       },
     );
